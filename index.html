@@ -3,8 +3,11 @@
 
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/circle.css">
 	<script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/sections-controler.js"></script>
 	<script type="text/javascript" src="js/submit-form.js"></script>
 	<title>Olya Slisarchuk</title>
@@ -56,8 +59,8 @@
 				</div>
 				<div>
 					<dl>
-                        <dt><b>1999 - 2009</b></dt>
-					<dd>Educational Complex of Zhydachiv</dd>
+						<dt><b>1999 - 2009</b></dt>
+						<dd>Educational Complex of Zhydachiv</dd>
 					</dl>
 				</div>
 			</div>
@@ -79,23 +82,59 @@
 				<h2>Skills</h2>
 				<div>
 					<h3>Computer Skills</h3>
-					<ul id="computer-skills">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-					</ul>
+					<div id="computer-skills">
+						<span>HTML</span>
+						<span>CSS</span>
+						<span>JavaScript</span>
+					</div>
+					<div id="skills-level">
+						<div class="c100 p25 small">
+							<span>25%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="c100 p25 small">
+							<span>25%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="c100 p25 small">
+							<span>25%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						
+					</div>
 				</div>
-				<div>
+				<div id="languages">
 					<h3>Languages</h3>
-					<dl id="languages">
+					<dl>
+						<div class="lang">
 						<dt> Ukrainian: native</dt>
-						<dd><progress value="100" max="100"></progress></dd>
+						<dd>
+							<progress value="100" max="100"></progress>
+						</dd>
 						<dt> English: C1 </dt>
-						<dd><progress value="80" max="100"></progress></dd>
+						<dd>
+							<progress value="80" max="100"></progress>
+						</dd>
+						</div>
+						<div class="lang">
 						<dt> Russian: B2 </dt>
-						<dd><progress value="70" max="100"></progress></dd>
+						<dd>
+							<progress value="70" max="100"></progress>
+						</dd>
 						<dt> German: A2 </dt>
-						<dd><progress value="30" max="100"></progress></dd>
+						<dd>
+							<progress value="30" max="100"></progress>
+						</dd>
+						</div>
 					</dl>
 				</div>
 			</div>
@@ -113,10 +152,10 @@
 							<input type="email" id="email" placeholder="Email" required>
 							<br>
 							<br>
-							<textarea name="message" id="msg" rows="10" cols="30" placeholder="Your message" required></textarea>
+							<textarea name="message" id="msg" rows="5" cols="30" placeholder="Your message" required></textarea>
 							<br>
 							<br>
-							<input type="submit" id="send">
+							<input type="submit" id="send" value="Send">
 						</form>
 					</div>
 					<div id="my-contacts">
@@ -126,7 +165,8 @@
 							<li>Email: korchanola@gmail.com</li>
 							<li>Address: Lviv, Horodotska Str.150</li>
 						</ul>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4422403777926!2d23.98041371548574!3d49.834147439460516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add882a8a4d0f%3A0x3fc4310a65d1b5a8!2sHorodotska+St%2C+150%2C+L&#39;viv%2C+Lviv+Oblast!5e0!3m2!1sen!2sua!4v1459795350205?hl=en" width="300" height=auto frameborder="0" style="border:0">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4422403777926!2d23.98041371548574!3d49.834147439460516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add882a8a4d0f%3A0x3fc4310a65d1b5a8!2sHorodotska+St%2C+150%2C+L&#39;viv%2C+Lviv+Oblast!5e0!3m2!1sen!2sua!4v1459795350205?hl=en"
+						width="300" height=auto frameborder="0" style="border:0">
 						</iframe>
 					</div>
 				</div>
