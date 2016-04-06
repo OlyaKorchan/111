@@ -172,9 +172,6 @@ header li a:hover {
     margin: 23px;
     font-weight: bold;
 }
-#languages {
-    position: fixed;
-}
 #languages dt {
     font-weight: bold;
     font-size: 14px;
