@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="js/sections-controler.js"></script>
+	<script type="text/javascript" src="js/submit-form.js"></script>
+	<title>Olya Slisarchuk</title>
+</head>
+
+<body>
+	<section id="main">
+		<header>
+			<div id="my-photo">
+				<img src="my-photo.png" alt="My Photo">
+			</div>
+			<div id="right-header">
+				<h1>OLYA SLISARCHUK</h1>
+				<nav>
+					<ul type="none">
+						<li><a id="menu-about" href="#about">About</a></li>
+						<li><a id="menu-education" href="#education">Education</a></li>
+						<li><a id="menu-interests" href="#interests">Interests</a></li>
+						<li><a id="menu-skills" href="#skills">Skills</a></li>
+						<li><a id="menu-contacts" href="#contacts">Contacts</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="content">
+			<div id="about" style="display:block">
+				<h3>Hello everyone!</h3>
+				<p>My name is Olya and I am beginner front-end developer.
+					<br>If you are interested to get me better you are welcome to check my resume</p>
+				<a href="resources/cv.pdf" download>Download my CV</a>
+			</div>
+			<div id="education">
+				<h2>Education</h2>
+				<div id="education-content">
+					<dl>
+						<dt><b>2013 - 2014</b></dt>
+						<dd>Lviv Polytechnic National University</dd>
+						<dd>Faculty of Applied Linguisitics</dd>
+						<dd>Degree: Master</dd>
+					</dl>
+				</div>
+				<div>
+					<dl>
+						<dt><b>2009 - 2013</b></dt>
+						<dd>Lviv Polytechnic National University</dd>
+						<dd>Faculty of Applied Linguisitics</dd>
+						<dd>Degree: Bachelor</dd>
+					</dl>
+				</div>
+				<div>
+					<dl>
+                        <dt><b>1999 - 2009</b></dt>
+					<dd>Educational Complex of Zhydachiv</dd>
+					</dl>
+				</div>
+			</div>
+			<div id="interests">
+				<h2>Interests</h2>
+				<figure>
+					<img class="interests" src="img/books.jpg" alt="Books">
+					<img class="interests" src="img/volunteer.jpg" alt="Volunteer">
+					<img class="interests" src="img/games.jpg" alt="Games">
+					<img class="interests" src="img/reading.jpg" alt="Reding in the park">
+					<br>
+					<img class="interests" src="img/concert.jpg" alt="OE concert">
+					<img class="interests" src="img/music.jpg" alt="Music">
+					<img class="interests" src="img/mountains.jpg" alt="Traveling">
+					<img class="interests" src="img/owl.jpg" alt="Cross-stitching">
+				</figure>
+			</div>
+			<div id="skills">
+				<h2>Skills</h2>
+				<div>
+					<h3>Computer Skills</h3>
+					<ul id="computer-skills">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Languages</h3>
+					<dl id="languages">
+						<dt> Ukrainian: native</dt>
+						<dd><progress value="100" max="100"></progress></dd>
+						<dt> English: C1 </dt>
+						<dd><progress value="80" max="100"></progress></dd>
+						<dt> Russian: B2 </dt>
+						<dd><progress value="70" max="100"></progress></dd>
+						<dt> German: A2 </dt>
+						<dd><progress value="30" max="100"></progress></dd>
+					</dl>
+				</div>
+			</div>
+			<div id="contacts">
+				<h2>Contacts</h2>
+				<div id="two-sections">
+					<div id="contact-form">
+						<h3>Contact me</h3>
+						<form id="contact">
+							<label for="name">Name: </label>
+							<input type="text" id="firstname" placeholder="Name" required>
+							<br>
+							<br>
+							<label for="email">Email: </label>
+							<input type="email" id="email" placeholder="Email" required>
+							<br>
+							<br>
+							<textarea name="message" id="msg" rows="10" cols="30" placeholder="Your message" required></textarea>
+							<br>
+							<br>
+							<input type="submit" id="send">
+						</form>
+					</div>
+					<div id="my-contacts">
+						<h3>My contacts</h3>
+						<ul type="none">
+							<li>Phone: +380974083223</li>
+							<li>Email: korchanola@gmail.com</li>
+							<li>Address: Lviv, Horodotska Str.150</li>
+						</ul>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4422403777926!2d23.98041371548574!3d49.834147439460516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add882a8a4d0f%3A0x3fc4310a65d1b5a8!2sHorodotska+St%2C+150%2C+L&#39;viv%2C+Lviv+Oblast!5e0!3m2!1sen!2sua!4v1459795350205?hl=en" width="300" height=auto frameborder="0" style="border:0">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p>Contact me:
+				<a href="https://www.facebook.com/olya.korchan" target="_blank"><img src="img/fb.png" alt="fb icon"></a>
+				<a href="https://plus.google.com/u/0/100080983472793085400" target="_blank"><img src="img/google+.png" alt="google+ icon"></a>
+				<a href="https://www.linkedin.com/in/olya-korchan-8b640737?trk=nav_responsive_tab_profile" target="_blank"><img src="img/linkedin.png" alt="linkedin icon"></a>
+			</p>
+		</footer>
+	</section>
+</body>
+
+</html>

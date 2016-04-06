@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bree Serif'), local('BreeSerif-Regular'), url(https://fonts.gstatic.com/s/breeserif/v5/LQ7WLTaITDg4OSRuOZCps_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Droid Serif'), local('DroidSerif'), url(https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/background.png");
+    background-position: right 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    color: black;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+#main {
+    max-width: 1200px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Droid Serif';
+    position: relative;
+}
+
+header {
+    top: 0;
+    width: 1000px;
+    height: 180px;
+    color: black;
+    clear: both;
+    position: absolute;
+}
+
+#my-photo {
+    text-align: center;
+    float: left;
+    padding-right: 40px;
+    padding-top: 35px;
+    height: auto;
+    width: 200px;
+    height: 100%;
+}
+
+#my-photo img {
+    height: 130px;
+    width: 129px;
+}
+
+header h1 {
+    border-bottom: 4px solid black;
+    padding-bottom: 2%;
+    float: left;
+    font-family: 'Bree Serif';
+    font-size: 30px;
+    font-weight: 200;
+    width: 74%;
+}
+
+header li {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+    margin-right: 6%;
+    font-family: 'Bree Serif';
+    font-weight: 200;
+    font-size: 18px;
+    clear: both;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+}
+
+header li:hover {
+    cursor: pointer;
+    border-bottom: solid 4px #03A89E;
+}
+
+#content {
+    color: black;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: left;
+    vertical-align: middle;
+    margin-bottom: 12%;
+    clear: both;
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    display: inline-block;
+}
+
+#about,
+#education,
+#interests,
+#skills,
+#contacts {
+    position: fixed;
+    overflow: hidden;
+    
+}
+#about {
+    height: 500px;
+}
+#about h3 {
+    font-size: 25px;
+    padding-top: 7%;
+}
+
+#about a {
+    position: relative;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    border: solid 1px black;
+}
+
+#about a:hover {
+    background-color: black;
+    color: white;
+}
+
+#about p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    line-height: 200%;
+}
+
+#education dl {
+    border-left: 2px solid black;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.interests {
+    width: 150px;
+    height: 150px;
+}
+#computer-skills li {
+    display: inline-block;
+}
+
+#languages dt {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#languages dd {
+    padding-bottom: 20px;
+}
+
+progress {
+    background-color: white;
+    border: 2px solid #03A89E;
+    height: 14px;
+    width: 400px;
+}
+
+progress::-webkit-progress-value {
+    background: #03A89E;
+}
+
+progress::-moz-progress-bar {
+    background: #03A89E;
+}
+#contact-form {
+    float:left;
+    width: 45%;
+    position: relative;
+    margin-right: 50px;
+}
+#my-contacts {
+    position: relative;
+    width: 45%;
+    float: left;
+}
+#my-contacts li {
+    font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    clear: both;
+    margin-left: 200px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer a {
+    margin-right: 1%;
+    display: inline-block;
+}
