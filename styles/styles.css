@@ -125,7 +125,7 @@ header li a:hover {
     height: 100%;
     overflow: hidden;
     position: fixed;
-    margin-top: 3%;
+    margin-top: 1%;
     margin-bottom: 3%;
 }
 #about {
@@ -136,7 +136,7 @@ header li a:hover {
     padding-top: 7%;
 }
 
-#about a {
+.button {
     position: relative;
     text-decoration: none;
     padding: 10px 15px;
@@ -147,9 +147,10 @@ header li a:hover {
     border: solid 1px black;
 }
 
-#about a:hover {
+.button:hover {
     background-color: black;
     color: white;
+    text-decoration: none;
 }
 
 #about p {
@@ -219,14 +220,18 @@ footer {
     position: fixed;
     bottom: 0;
     clear: both;
-    margin-left: 200px;
 }
 
 footer p {
     font-weight: bold;
 }
 
-footer a {
-    margin-right: 1%;
+footer a, span {
+    margin-right: 0.5%;
     display: inline-block;
+}
+
+footer img {
+    height: 15px;
+    width: auto;
 }
