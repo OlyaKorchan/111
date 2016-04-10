@@ -29,7 +29,7 @@ body {
     color: black;
     margin: 0 auto;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 #main {
@@ -104,9 +104,9 @@ header li a:hover {
 
 #content {
     color: black;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /*overflow: hidden;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: hidden;*/
     text-align: left;
     vertical-align: middle;
     margin-bottom: 12%;
@@ -123,7 +123,7 @@ header li a:hover {
 #skills,
 #contacts {
     height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: fixed;
     margin-top: 1%;
     margin-bottom: 3%;
@@ -133,7 +133,7 @@ header li a:hover {
 }
 #about h3 {
     font-size: 25px;
-    padding-top: 7%;
+    margin-top: 7%;
 }
 
 .button {
@@ -154,8 +154,8 @@ header li a:hover {
 }
 
 #about p {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     line-height: 200%;
 }
 
