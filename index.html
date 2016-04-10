@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" media="(max-width: 500px)" href="styles/mobile.css">
+	<link rel="stylesheet" media="(max-width: 850px)" href="styles/tablet.css">
 	<link rel="stylesheet" href="styles/circle.css">
 	<link rel="stylesheet" href="styles/jquery.fancybox.css" type="text/css" media="screen" />
-	<script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/sections-controler.js"></script>
-	<script type="text/javascript" src="js/pictures-viewer.js"></script>
-	<script type="text/javascript" src="js/submit-form.js"></script>
 	<title>Olya Slisarchuk</title>
 </head>
-
 <body>
 	<section id="main">
 		<header>
 			<div id="my-photo">
-				<img src="my-photo.png" alt="My Photo">
+				<img src="my-photo.png" alt="My Photo" class="center">
 			</div>
 			<div id="right-header">
 				<h1>OLYA SLISARCHUK</h1>
 				<nav>
-					<ul type="none">
+					<ul>
 						<li><a id="menu-about" href="#about">About</a></li>
 						<li><a id="menu-education" href="#education">Education</a></li>
 						<li><a id="menu-interests" href="#interests">Interests</a></li>
@@ -44,7 +37,7 @@
 					<br>If you are interested to get me better you are welcome to check my resume</p>
 				<div><a class="button" href="resources/cv.pdf" download>Download my CV</a></div>
 			</div>
-			<div id="education">
+			<div id="education" style="display:none">
 				<h2>Education</h2>
 				<div id="education-content">
 					<dl>
@@ -69,37 +62,37 @@
 					</dl>
 				</div>
 			</div>
-			<div id="interests">
+			<div id="interests" style="display:none">
 				<h2>Interests</h2>
 				<figure>
-					<a class="fancybox" rel="gallery1" href="img/books.jpg" title="Small part of my books">
+					<a class="fancybox" data-fancybox-group="gallery1" href="img/books.jpg" title="Small part of my books">
 						<img class="interests" src="img/books.jpg" alt="Books">
 					</a>
-					<a class="fancybox" rel="gallery1" href="img/volunteer.jpg" title="Volunteer at EURO2012">
+					<a class="fancybox" data-fancybox-group="gallery1" href="img/volunteer.jpg" title="Volunteer at EURO2012">
 						<img class="interests" src="img/volunteer.jpg" alt="Volunteer">
 					</a>
-					<a class="fancybox" rel="gallery1" href="img/games.jpg" title="My favourite board games">
+					<a class="fancybox" data-fancybox-group="gallery1" href="img/games.jpg" title="My favourite board games">
 						<img class="interests" src="img/games.jpg" alt="Games">
 					</a>
-					<a class="fancybox" rel="gallery1" href="img/reading.jpg" title="The best place for reading">
+					<a class="fancybox" data-fancybox-group="gallery1" href="img/reading.jpg" title="The best place for reading">
 						<img class="interests" src="img/reading.jpg" alt="Reding in the park">
 					</a>
 					<br>
-					<a class="fancybox" rel="gallery1" href="img/concert.jpg" title="The best concert ever">
+					<a class="fancybox" data-fancybox-group="gallery1" href="img/concert.jpg" title="The best concert ever">
 						<img class="interests" src="img/concert.jpg" alt="OE concert">
 					</a>
-					<a class="fancybox" rel="gallery1" href="img/music.jpg" title="They help me to listen OE">
+					<a class="fancybox" data-fancybox-group="gallery1" href="img/music.jpg" title="They help me to listen OE">
 						<img class="interests" src="img/music.jpg" alt="Music">
 					</a>
-					<a class="fancybox" rel="gallery1" href="img/mountains.jpg" title="What can be better than traveling">
+					<a class="fancybox" data-fancybox-group="gallery1" href="img/mountains.jpg" title="What can be better than traveling">
 						<img class="interests" src="img/mountains.jpg" alt="Traveling">
 					</a>
-					<a class="fancybox" rel="gallery1" href="img/owl.jpg" title="Cross-stitched tiny owl">
+					<a class="fancybox" data-fancybox-group="gallery1" href="img/owl.jpg" title="Cross-stitched tiny owl">
 						<img class="interests" src="img/owl.jpg" alt="Cross-stitching">
 					</a>
 				</figure>
 			</div>
-			<div id="skills">
+			<div id="skills" style="display:none">
 				<h2>Skills</h2>
 				<div>
 					<h3>Computer Skills</h3>
@@ -135,8 +128,8 @@
 				</div>
 				<div id="languages">
 					<h3>Languages</h3>
-					<dl>
-						<div class="lang">
+					<div class="lang">
+						<dl>
 							<dt> Ukrainian: native</dt>
 							<dd>
 								<progress value="100" max="100"></progress>
@@ -145,8 +138,10 @@
 							<dd>
 								<progress value="80" max="100"></progress>
 							</dd>
-						</div>
-						<div class="lang">
+						</dl>
+					</div>
+					<div class="lang">
+						<dl>
 							<dt> Russian: B2 </dt>
 							<dd>
 								<progress value="70" max="100"></progress>
@@ -155,17 +150,17 @@
 							<dd>
 								<progress value="30" max="100"></progress>
 							</dd>
-						</div>
-					</dl>
+						</dl>
+					</div>
 				</div>
 			</div>
-			<div id="contacts">
+			<div id="contacts" style="display:none">
 				<h2>Contacts</h2>
 				<div id="two-sections">
 					<div id="contact-form">
 						<h3>Contact me</h3>
 						<form id="contact">
-							<label for="name">Name: </label>
+							<label for="firstname">Name: </label>
 							<input type="text" id="firstname" placeholder="Name" required>
 							<br>
 							<br>
@@ -181,13 +176,12 @@
 					</div>
 					<div id="my-contacts">
 						<h3>My contacts</h3>
-						<ul type="none">
+						<ul>
 							<li>Phone: +380974083223</li>
 							<li>Email: korchanola@gmail.com</li>
 							<li>Address: Lviv, Horodotska Str.150</li>
 						</ul>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4422403777926!2d23.98041371548574!3d49.834147439460516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add882a8a4d0f%3A0x3fc4310a65d1b5a8!2sHorodotska+St%2C+150%2C+L&#39;viv%2C+Lviv+Oblast!5e0!3m2!1sen!2sua!4v1459795350205?hl=en"
-						width="300" height=auto frameborder="0" style="border:0">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4422403777926!2d23.98041371548574!3d49.834147439460516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add882a8a4d0f%3A0x3fc4310a65d1b5a8!2sHorodotska+St%2C+150%2C+L&#39;viv%2C+Lviv+Oblast!5e0!3m2!1sen!2sua!4v1459795350205?hl=en">
 						</iframe>
 					</div>
 				</div>
@@ -201,6 +195,11 @@
 			</p>
 		</footer>
 	</section>
+	<script src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="js/sections-controler.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/pictures-viewer.js"></script>
+	<script type="text/javascript" src="js/submit-form.js"></script>
 </body>
-
 </html>

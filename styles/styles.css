@@ -29,6 +29,7 @@ body {
     color: black;
     margin: 0 auto;
     padding: 0;
+    overflow-x: hidden;
     /*overflow: hidden;*/
 }
 
@@ -104,9 +105,6 @@ header li a:hover {
 
 #content {
     color: black;
-    /*overflow: hidden;*/
-    /*overflow-x: hidden;*/
-    /*overflow-y: hidden;*/
     text-align: left;
     vertical-align: middle;
     margin-bottom: 12%;
@@ -123,14 +121,15 @@ header li a:hover {
 #skills,
 #contacts {
     height: 100%;
-    /*overflow: hidden;*/
     position: fixed;
     margin-top: 1%;
     margin-bottom: 3%;
 }
+
 #about {
     height: 100%;
 }
+
 #about h3 {
     font-size: 25px;
     margin-top: 7%;
@@ -164,17 +163,21 @@ header li a:hover {
     padding-left: 10px;
     padding-bottom: 20px;
 }
+
 .interests {
     width: 150px;
     height: 150px;
 }
+
 #skills-level {
     display: inline-block;
 }
-#computer-skills span{
+
+#computer-skills span {
     margin: 21px;
     font-weight: bold;
 }
+
 #languages dt {
     font-weight: bold;
     font-size: 14px;
@@ -183,9 +186,11 @@ header li a:hover {
 #languages dd {
     padding-bottom: 20px;
 }
+
 .lang {
     display: inline-block;
 }
+
 progress {
     background-color: white;
     border: 2px solid #03A89E;
@@ -200,19 +205,30 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     background: #03A89E;
 }
+
 #contact-form {
-    float:left;
+    float: left;
     width: 45%;
     position: relative;
     margin-right: 50px;
 }
+
 #my-contacts {
     position: relative;
     width: 45%;
     float: left;
 }
+
 #my-contacts li {
     font-size: 14px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+iframe {
+    width: 300px;
+    height: auto;
+    border: 0;
 }
 
 footer {
@@ -226,7 +242,8 @@ footer p {
     font-weight: bold;
 }
 
-footer a, span {
+footer a,
+span {
     margin-right: 0.5%;
     display: inline-block;
 }
